@@ -5,9 +5,11 @@ import unittest
 
 
 class MyTester(unittest.TestCase):
-    
+    def setUp(self):
+        tester = App()
+
     def test_suma_ok(self):
-        self.assertEqual(App.add(1, 2), 3, "Error en la suma")
+        self.assertEqual(self.tester.add(1, 2), 3, "Error en la suma")
 
     def test_suma_bad(self):
         self.assertNotEqual(App.add(10, 20), 4, "Error en la suma")
