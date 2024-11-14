@@ -2,16 +2,16 @@ from __future__ import absolute_import
 
 class App:
     @staticmethod
-    def add(self,a,b):
+    def add(a,b):
         return a+b
 
-    def resta(self,a,b):
+    def resta(a,b):
         return 0
 
-    def multiplicacion(self,a,b):
+    def multiplicacion(a,b):
         return 0
 
-    def division(self,a,b):
+    def division(a,b):
         return 0
 
     # 1. Verifica si una lista contiene un número primo
