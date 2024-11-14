@@ -3,7 +3,7 @@ from __future__ import absolute_import
 class App:
     @staticmethod
     def add(self,a,b):
-        return 0
+        return a+b
 
     def resta(self,a,b):
         return 0
