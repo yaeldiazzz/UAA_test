@@ -74,14 +74,20 @@ class App:
         Verifica si la palabra es un palíndromo (igual al leerla al revés).
         Retorna True si es palíndromo, de lo contrario, False.
         """
-        pass
+        # Comparamos la palabra con su reverso
+        return palabra == palabra[::-1]
+    pass
 
     # 5. Calcula la suma de los primeros n números impares
     def suma_primeros_impares(n):
-        """
-        Calcula y retorna la suma de los primeros 'n' números impares.
-        """
-        pass
+     """
+     Calcula y retorna la suma de los primeros 'n' números impares.
+     """
+     suma = 0
+     for i in range(1, 2 * n, 2):  # Generamos los primeros 'n' números impares
+        suma += i
+     return suma
+    pass
 
     # 6. Verifica si todos los elementos de una lista son únicos
     def elementos_unicos(lista):
