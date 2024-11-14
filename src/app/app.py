@@ -39,19 +39,34 @@ class App:
 
     # 2. Cuenta los números pares en un rango dado
     def contar_pares(inicio, fin):
-        """
-        Cuenta la cantidad de números pares en el rango desde 'inicio' hasta 'fin' (inclusive).
-        Retorna la cantidad de números pares.
-        """
-        pass
+     """
+     Cuenta la cantidad de números pares en el rango desde 'inicio' hasta 'fin' (inclusive).
+     Retorna la cantidad de números pares.
+     """
+     # Inicializamos un contador
+     contador = 0
+
+     # Iteramos desde inicio hasta fin (inclusive)
+     for num in range(inicio, fin + 1):
+        if num % 2 == 0:  # Verificamos si el número es par
+            contador += 1
+
+     return contador
+    
+    pass
 
     # 3. Encuentra el número máximo en una lista que sea múltiplo de un valor dado
     def maximo_multiplo(lista, multiplo):
-        """
-        Encuentra y retorna el valor máximo de la lista que es múltiplo del parámetro 'multiplo'.
-        Si no hay múltiplos, retorna None.
-        """
-        pass
+     """
+     Encuentra y retorna el valor máximo de la lista que es múltiplo del parámetro 'multiplo'.
+     Si no hay múltiplos, retorna None.
+     """
+     # Filtramos los números que son múltiplos del valor dado
+     multiplos = [num for num in lista if num % multiplo == 0]
+    
+     # Si hay múltiplos, retornamos el máximo; de lo contrario, retornamos None
+     return max(multiplos) if multiplos else None
+    pass
 
     # 4. Verifica si una palabra es palíndroma (se lee igual en ambos sentidos)
     def es_palindromo(palabra):
