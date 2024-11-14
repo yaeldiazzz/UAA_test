@@ -140,7 +140,17 @@ class App:
 
     # 10. Calcula la serie de Fibonacci hasta n términos
     def fibonacci(n):
-        """
-        Genera y retorna una lista con los primeros 'n' términos de la serie de Fibonacci.
-        """
-        pass
+     """
+     Genera y retorna una lista con los primeros 'n' términos de la serie de Fibonacci.
+     """
+     # Lista para almacenar los términos de la serie
+     secuencia = []
+    
+     # Generamos los primeros n términos
+     a, b = 0, 1
+     for _ in range(n):
+        secuencia.append(a)
+        a, b = b, a + b  # Calculamos el siguiente término
+    
+     return secuencia
+    pass
